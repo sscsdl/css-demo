@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Flex</title>
+	<style>
+		body {background: #B8F4FF; color: #333;}
+		section {display: flex; width: 300px; height: 200px; border: 1px solid #B8FFB8; background: #5FD9CD;}
+		section .box {width:50px; height:50px; background: #EAF786; font-size: 25px; border: 1px solid #5FD9CD; word-break:break-all; text-align: center;}
+        span {font-size: 12px;}
+	</style>
+</head>
+
+<body>
+	<div style="float: left;">
+		<div>flex-direction: row;</div>
+		<section style="flex-direction: row;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>flex-direction: row-reverse;</div>
+		<section style="flex-direction: row-reverse;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+		</section>
+	</div>
+
+	<div style="float: left;">
+		<div>flex-direction: column;</div>
+		<section style="flex-direction: column;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+		</section>
+	</div>
+
+	<div style="float: left;">
+		<div>flex-direction: column-reverse;</div>
+		<section style="flex-direction: column-reverse;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+		</section>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div style="float: left;">
+		<div>flex-wrap: nowrap;</div>
+		<section style="flex-direction: row;flex-wrap: nowrap;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>flex-wrap: wrap;</div>
+		<section style="flex-direction: row;flex-wrap: wrap;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>flex-wrap: wrap-reverse;</div>
+		<section style="flex-direction: row;flex-wrap: wrap-reverse;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div style="float: left;">
+		<div>flex-flow: column-reverse wrap-reverse</div>
+		<section style="flex-direction: row;flex-flow: column-reverse wrap-reverse;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div style="float: left;">
+		<div>justify-content:flex-start</div>
+		<section style="flex-direction: row; justify-content:flex-start;">
+			<div class="box" style="width:30px;">1</div>
+			<div class="box" style="width:70px;">2</div>
+			<div class="box" style="width:50px;">3</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>justify-content:flex-end</div>
+		<section style="flex-direction: row; justify-content:flex-end;">
+			<div class="box" style="width:30px;">1</div>
+			<div class="box" style="width:70px;">2</div>
+			<div class="box" style="width:50px;">3</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>justify-content:center</div>
+		<section style="flex-direction: row; justify-content:center;">
+			<div class="box" style="width:30px;">1</div>
+			<div class="box" style="width:70px;">2</div>
+			<div class="box" style="width:50px;">3</div>
+		</section>
+    </div>
+	<div style="float: left;">
+		<div>justify-content:space-between</div>
+		<section style="flex-direction: row; justify-content:space-between;">
+			<div class="box" style="width:30px;">1</div>
+			<div class="box" style="width:70px;">2</div>
+			<div class="box" style="width:50px;">3</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>justify-content:space-around</div>
+		<section style="flex-direction: row; justify-content:space-around;">
+			<div class="box" style="width:30px;">1</div>
+			<div class="box" style="width:70px;">2</div>
+			<div class="box" style="width:50px;">3</div>
+		</section>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div style="float: left;">
+		<div>align-items: flex-start</div>
+		<section style="flex-direction: row; align-items: flex-start;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto;">22222222</div>
+			<div class="box" style="height: auto;">33333</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-items: flex-end</div>
+		<section style="flex-direction: row; align-items: flex-end;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto;">22222222</div>
+			<div class="box" style="height: auto;">33333</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-items: center</div>
+		<section style="flex-direction: row; align-items: center;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto;">22222222</div>
+			<div class="box" style="height: auto;">33333</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-items: baseline 文字水平对齐</div>
+		<section style="flex-direction: row; align-items: baseline;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto; padding-top:20px;">22222222</div>
+			<div class="box" style="height: auto;">33333</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-items: stretch（默认）</div>
+		<section style="flex-direction: row; align-items: stretch;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto;">22222222222</div>
+			<div class="box" style="height: auto;">333333</div>
+		</section>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div style="float: left;">
+		<div>align-content: flex-start</div>
+		<section style="flex-direction: row; flex-wrap: wrap; align-content: flex-start;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-content: flex-end</div>
+		<section style="flex-direction: row; flex-wrap: wrap; align-content: flex-end;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-content: center</div>
+		<section style="flex-direction: row; flex-wrap: wrap; align-content: center;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-content: space-between</div>
+		<section style="flex-direction: row; flex-wrap: wrap; align-content: space-between;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-content: space-around</div>
+		<section style="flex-direction: row; flex-wrap: wrap; align-content: space-around;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-content: stretch（默认）</div>
+		<section style="flex-direction: row; flex-wrap: wrap; align-content: stretch;">
+			<div class="box" style="">1</div>
+			<div class="box" style="">2</div>
+			<div class="box" style="">3</div>
+			<div class="box" style="">4</div>
+			<div class="box" style="">5</div>
+			<div class="box" style="">6</div>
+			<div class="box" style="">7</div>
+			<div class="box" style="">8</div>
+			<div class="box" style="">9</div>
+		</section>
+	</div>
+	
+	<div style="clear: both;"></div>
+	<br>
+	<br>
+	<div style="float: left;">
+		<div>order</div>
+		<section style="flex-direction: row; width: 600px;">
+			<div class="box" style="height: 70px; width: auto; order:1">1 <br> order:1</div>
+			<div class="box" style="height: 70px; width: auto; order:6">2 <br> order:6</div>
+			<div class="box" style="height: 70px; width: auto; order:2">3 <br> order:2</div>
+			<div class="box" style="height: 70px; width: auto; order:5">5 <br> order:5</div>
+			<div class="box" style="height: 70px; width: auto; order:-1">6 <br> order:-1</div>
+			<div class="box" style="height: 70px; width: auto; order:4">7 <br> order:4</div>
+		</section>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div style="float: left;">
+		<div>flex-grow</div>
+		<section style="flex-direction: row;">
+			<div class="box" style="flex-grow:1">1</div>
+			<div class="box" style="flex-grow:2">2</div>
+			<div class="box" style="flex-grow:1">1</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>flex-shrink</div>
+		<section style="flex-direction: row;">
+			<div class="box" style="flex-shrink: 1;">1</div>
+			<div class="box" style="flex-shrink: 1;">2</div>
+			<div class="box" style="flex-shrink: 0;">3</div>
+			<div class="box" style="flex-shrink: inherit;">4</div>
+			<div class="box" style="flex-shrink: initial;">5</div>
+			<div class="box" style="flex-shrink: unset;">6</div>
+			<div class="box" style="flex-shrink: 1;">7</div>
+			<div class="box" style="flex-shrink: 1;">8</div>
+			<div class="box" style="flex-shrink: 1;">9</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>flex-basis</div>
+        <div>
+            <section style="flex-direction: row; height: 65px;">
+                <div class="box" style="flex-basis: auto;">1</div>
+                <div class="box" style="flex-basis: 20px;">2</div>
+                <div class="box" style="flex-basis: 80px;">3</div>
+            </section>
+        </div>
+        <div>
+            <section style="flex-direction: row; height: 65px; line-height: 12px;">
+                <div class="box" style="flex-basis: fill;"><span>fill</span></div>
+                <div class="box" style="flex-basis: max-content;"><span>max-content</span></div>
+                <div class="box" style="flex-basis: min-content;"><span>min-content</span></div>
+                <div class="box" style="flex-basis: content;"><span>content</span></div>
+            </section>
+        </div>
+        <div>
+            <section style="flex-direction: row; height: 65px; line-height: 12px;">
+                <div class="box" style="flex-basis: inherit;"><span>inherit</span></div>
+                <div class="box" style="flex-basis: initial;"><span>initial</span></div>
+                <div class="box" style="flex-basis: unset;"><span>unset</span></div>
+            </section>
+        </div>
+    </div>
+	<div style="float: left;">
+        <div>flex</div>
+        <div>
+            <section style="flex-direction: row; width: 600px;height: 65px;">
+                <div class="box" style="flex: 0;">0</div>
+                <div class="box" style="flex: 1;">1</div>
+                <div class="box" style="flex: 20px;">1</div>
+                <div class="box" style="flex: inherit; font-size: 12px;" title="继承">inherit</div>
+                <div class="box" style="flex: initial; font-size: 12px;" title="initial">initial</div>
+                <div class="box" style="flex: none; font-size: 12px;" title="none">none</div>
+            </section>
+        </div>
+        <div>
+            <section style="flex-direction: row; width: 600px;height: 65px;">
+                <div class="box" style="flex: 0 0 0; font-size: 12px;" title="0 0">0 0</div>
+                <div class="box" style="flex: 0 1 0; font-size: 12px;" title="0 1">0 1</div>
+                <div class="box" style="flex: 1 0 0; font-size: 12px;" title="1 0">1 0</div>
+                <div class="box" style="flex: 1 1 0; font-size: 12px;" title="1 1">1 1</div>
+                <div class="box" style="flex: 0 20px; font-size: 12px;" title="0 20px">0 20px</div>
+                <div class="box" style="flex: 1 100px; font-size: 12px;" title="1 20px">1 20px</div>
+                <div class="box" style="flex: 1 auto; font-size: 12px;" title="1 auto">1 auto</div>
+            </section>
+        </div>
+        <div>
+            <section style="flex-direction: row; width: 600px;height: 65px;">
+                <div class="box" style="flex: 0 0 auto; font-size: 12px;" title="0 0 auto">0 0 auto</div>
+                <div class="box" style="flex: 0 0 30px; font-size: 12px;" title="0 0 30px">0 0 30px</div>
+                <div class="box" style="flex: 1 0 auto; font-size: 12px;" title="1 0 auto">1 0 auto</div>
+                <div class="box" style="flex: 0 1 auto; font-size: 12px;" title="0 1 auto">0 1 auto</div>
+                <div class="box" style="flex: 1 1 auto; font-size: 12px;" title="1 1 auto">1 1 auto</div>
+            </section>
+        </div>
+	</div>
+	
+	<div style="clear: both;"></div>
+
+	<div style="float: left;">
+		<div>align-self: auto（默认） 指定单个</div>
+		<section style="flex-direction: row; align-items: flex-start;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto; align-self: auto;">22222222</div>
+			<div class="box" style="height: auto;">33333</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-self: flex-end</div>
+		<section style="flex-direction: row; align-items: flex-start;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto; align-self: flex-end;">22222222</div>
+			<div class="box" style="height: auto;">33333</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-self: center</div>
+		<section style="flex-direction: row; align-items: flex-start;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto; align-self: center;">22222222</div>
+			<div class="box" style="height: auto;">33333</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-self: baseline</div>
+		<section style="flex-direction: row; align-items: flex-start;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto; margin-top:30px;align-self: baseline;">2222</div>
+			<div class="box" style="height: auto;">3333333</div>
+			<div class="box" style="height: auto; align-self: baseline;">444</div>
+			<div class="box" style="height: auto;">55555555</div>
+		</section>
+	</div>
+	<div style="float: left;">
+		<div>align-self: stretch</div>
+		<section style="flex-direction: row; align-items: flex-start;">
+			<div class="box" style="height: auto;">1</div>
+			<div class="box" style="height: auto; align-self: stretch;">22222222</div>
+			<div class="box" style="height: auto;">33333</div>
+		</section>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div style="float: left;">
+		<div>test</div>
+		<section style="flex-direction: row; height: auto;">
+			<div style="display: flex; flex-direction: column; flex: 1; ">
+				<div class="box" style="height: auto;">1</div>
+				<div class="box" style="height: auto;">66666</div>
+				<div class="box" style="height: auto;">11111111</div>
+			</div>
+			<div style="display: flex; flex-direction: column; flex: 1; ">
+				<div class="box" style="height: auto;">2222222</div>
+				<div class="box" style="height: auto;">777</div>
+				<div class="box" style="height: auto;">1212121212</div>
+			</div>
+			<div style="display: flex; flex-direction: column; flex: 1; ">
+				<div class="box" style="height: auto;">33333</div>
+				<div class="box" style="height: auto;">88888888</div>
+				<div class="box" style="height: auto;">1313</div>
+			</div>
+			<div style="display: flex; flex-direction: column; flex: 1; ">
+				<div class="box" style="height: auto;">4444</div>
+				<div class="box" style="height: auto;">999999</div>
+				<div class="box" style="height: auto;">1414</div>
+			</div>
+			<div style="display: flex; flex-direction: column; flex: 1; ">
+				<div class="box" style="height: auto;">55555</div>
+				<div class="box" style="height: auto;">10101010</div>
+				<div class="box" style="height: auto;">15</div>
+			</div>
+		</section>
+	</div>
+	
+	<div style="float: left;">
+        <div>flex</div>
+        <div style="width: 600px;height: 165px;">
+            <section style="display: flex; flex-direction: row; width: auto;height: 100%;">
+				<div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">
+					<section style="display: flex; flex-direction: row; width: auto;height: 100%;">
+						<div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">
+							<section style="display: flex; flex-direction: row; width: auto;height: 100%;">
+								<div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">1</div>
+								<div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">2</div>
+								<div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">3</div>
+							</section>
+						</div>
+						<div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">2</div>
+						<div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">3</div>
+					</section>
+				</div>
+                <div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">2</div>
+                <div class="" style="flex: 1; background-color: #EAF786; text-align: center;border: 1px solid #555;">3</div>
+            </section>
+        </div>
+	</div>
+	<style>
+		#mmp {width: 100%; height: 100%;}
+		#mmp #sub {width: 100px; height: 50px; text-align: center; background-color: #999; border: 1px solid #555; border-radius: 5px;}
+
+	</style>
+	<div style="float: left;">
+		<div>test</div>
+		<div id="mind" style="width: 600px; height: 300px;">
+		</div>
+	</div>
+	<script>
+	var Mind = (function() {
+		'use strict';
+		var Mind = function(option) {
+			this.id = option.id;
+			this.warp = document.getElementById(this.id);
+			if (this.warp === null) {
+				return ;
+			}
+			this.canvas = null;
+			this.init();
+		}
+		Mind.prototype = {
+			init: function () {
+				this.canvas = window.document.createElement('canvas');
+				this.canvas.id = 'mmp';
+				this.warp.appendChild(this.canvas);
+
+				var sub = document.createElement('div');
+				sub.id = 'sub';
+				sub.innerText = 'Sub';
+				this.canvas.appendChild(sub);
+			},
+			show: function () {
+				this.canvas.draw()
+			}
+		}
+		return Mind;
+	})()
+	
+	var mind = new Mind({
+		id:'mind',
+		theme:'default',
+		editable:true
+	});
+	mind.show();
+	</script>
+</body>
+
+</html>
